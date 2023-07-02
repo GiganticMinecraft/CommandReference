@@ -80,7 +80,7 @@
       - [`/fc craft`](#fc-craft)
       - [`/map`](#map)
       - [`/stickmenu` (`/sm`)](#stickmenu-sm)
-      - [`/preset`](#preset)
+      - [`/present`](#present)
       - [`/ec`](#ec)
       - [`/shareinv`](#shareinv)
       - [`/fd`](#fd)
@@ -442,7 +442,7 @@ FastCraft の画面を表示します。
 
 棒メニューを表示します。
 
-#### `/preset`
+#### `/present`
 
 運営チームからの配布アイテムを受け取ります。
 
