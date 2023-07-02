@@ -26,8 +26,8 @@
       - [`/jp <ON|OFF>` `*`](#jp-onoff-)
       - [`/ch hide player <プレイヤー名>` `*`](#ch-hide-player-プレイヤー名-)
       - [`/ch hide channel <チャンネル名>` `*`](#ch-hide-channel-チャンネル名-)
-      - [`/ch hide player <プレイヤー名>` `*`](#ch-hide-player-プレイヤー名--1)
-      - [`/ch hide channel <チャンネル名>` `*`](#ch-hide-channel-チャンネル名--1)
+      - [`/ch unhide player <プレイヤー名>` `*`](#ch-unhide-player-プレイヤー名-)
+      - [`/ch unhide channel <チャンネル名>` `*`](#ch-unhide-channel-チャンネル名-)
       - [`/ch hide list`](#ch-hide-list)
       - [`/tell <プレイヤー名> <メッセージ>`](#tell-プレイヤー名-メッセージ)
     - [チャンネルチャット](#チャンネルチャット)
@@ -154,11 +154,11 @@
 
 指定したチャンネルのチャットを非表示にします。
 
-#### `/ch hide player <プレイヤー名>` `*`
+#### `/ch unhide player <プレイヤー名>` `*`
 
 指定したプレイヤーのチャットを表示します。
 
-#### `/ch hide channel <チャンネル名>` `*`
+#### `/ch unhide channel <チャンネル名>` `*`
 
 指定したチャンネルのチャットを表示します。
 
