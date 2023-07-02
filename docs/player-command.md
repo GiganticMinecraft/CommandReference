@@ -38,6 +38,48 @@
       - [`/ch info <チャンネル名>`](#ch-info-チャンネル名)
       - [`![メッセージ]`](#メッセージ)
       - [`/ch list`](#ch-list)
+  - [保護管理](#保護管理)
+      - [`//ward`](#ward)
+      - [`//sel`](#sel)
+      - [`//pos1`](#pos1)
+      - [`//pos2`](#pos2)
+      - [`//expand <ブロック数> <方角>`](#expand-ブロック数-方角)
+      - [`//contract <ブロック数> <方角>`](#contract-ブロック数-方角)
+      - [`/rg info`](#rg-info)
+      - [`/rg claim <領域名>`](#rg-claim-領域名)
+      - [`/rg remove <領域名>`](#rg-remove-領域名)
+      - [`/rg addmember <領域名> <プレイヤー名>`](#rg-addmember-領域名-プレイヤー名)
+      - [`/rg removemember <領域名> <プレイヤー名>`](#rg-removemember-領域名-プレイヤー名)
+      - [`/x-transfer <領域名> <プレイヤー名>`](#x-transfer-領域名-プレイヤー名)
+  - [飛行関連](#飛行関連)
+      - [`/fly add <数字>`](#fly-add-数字)
+      - [`/fly endless`](#fly-endless)
+      - [`/fly finish`](#fly-finish)
+  - [Mebius関連](#mebius関連)
+      - [`/mebius naming <名前>`](#mebius-naming-名前)
+      - [`/mebius nickname`](#mebius-nickname)
+      - [`/mebius nickname set <名前>`](#mebius-nickname-set-名前)
+      - [`/mebius nickname reset`](#mebius-nickname-reset)
+      - [`/mebius convert`](#mebius-convert)
+      - [`/mebius`](#mebius)
+  - [MineStack関連](#minestack関連)
+      - [`/minestack on`](#minestack-on)
+      - [`/minestack off`](#minestack-off)
+      - [`/minestack open <カテゴリー番号> <ページ番号>`](#minestack-open-カテゴリー番号-ページ番号)
+      - [`/minestack store-all`](#minestack-store-all)
+  - [その他](#その他)
+      - [`/stick`](#stick)
+      - [`/ef`](#ef)
+      - [`/ef smart`](#ef-smart)
+      - [`/hat`](#hat)
+      - [`/glist`](#glist)
+      - [`/fc craft`](#fc-craft)
+      - [`/map`](#map)
+      - [`/stickmenu` (`/sm`)](#stickmenu-sm)
+      - [`/preset`](#preset)
+      - [`/ec`](#ec)
+      - [`/shareinv`](#shareinv)
+      - [`/fd`](#fd)
 ----
 
 ## 移動系
@@ -220,3 +262,167 @@
 | 白 | 参加しているチャンネル |
 | 赤 | 現在の発言先に設定しているチャンネル |
 | 青 | 非表示にしているチャンネル |
+
+## 保護管理
+
+#### `//ward`
+
+保護の範囲設定に使用する木の斧をインベントリに追加します。
+
+#### `//sel`
+
+範囲設定を解除します。
+
+#### `//pos1`
+
+現在地点を選択範囲の起点に設定します。
+
+#### `//pos2`
+
+現在地点を選択範囲の終点に設定します。
+
+#### `//expand <ブロック数> <方角>`
+
+選択している範囲を指定した方角に指定したブロック数分 **拡大** します。
+
+#### `//contract <ブロック数> <方角>`
+
+選択している範囲を指定した方角に指定したブロック数分 **縮小** します。
+
+#### `/rg info`
+
+現在地点の保護情報を表示します。
+
+#### `/rg claim <領域名>`
+
+指定した範囲を指定した領域名で保護します。
+
+#### `/rg remove <領域名>`
+
+指定した領域名の保護を削除します。
+
+#### `/rg addmember <領域名> <プレイヤー名>`
+
+指定した領域名の保護のメンバーに指定したプレイヤーを追加します。
+
+#### `/rg removemember <領域名> <プレイヤー名>`
+
+指定した領域名の保護のメンバーから指定したプレイヤーを削除します。
+
+#### `/x-transfer <領域名> <プレイヤー名>`
+
+指定した領域名の保護のオーナーを指定したプレイヤーに譲与します。
+
+## 飛行関連
+
+#### `/fly add <数字>`
+
+`<数字>`分間、飛行可能になります。
+
+#### `/fly endless`
+
+終了するまでの間、飛行可能になります。
+
+#### `/fly finish`
+
+飛行可能状態を解除します。
+
+## Mebius関連
+
+#### `/mebius naming <名前>`
+
+Mebiusの名前を指定した名前に変更します。
+
+#### `/mebius nickname`
+
+Mebiusからの呼び名を表示します。
+
+#### `/mebius nickname set <名前>`
+
+Mebiusからの呼び名を指定した名前に変更します。
+
+#### `/mebius nickname reset`
+
+Mebiusからの呼び名をリセットします。
+
+#### `/mebius convert`
+
+Mebiusの素材変換を行います。
+
+#### `/mebius`
+
+Mebius に関するコマンドを一覧表示します。
+
+## MineStack関連
+
+#### `/minestack on`
+
+Minestack の自動収集機能をONにします。
+
+#### `/minestack off`
+
+Minestack の自動収集機能をOFFにします。
+
+#### `/minestack open <カテゴリー番号> <ページ番号>`
+
+指定したカテゴリーの MineStack ページを開きます。
+
+​例:
+
+- トップページを開く: `/minestack open 0 0`
+- ガチャ品ページを開く: `/minestack open 7 1`
+
+#### `/minestack store-all`
+
+インベントリに存在するアイテムをすべて MineStack に収納します。 (収納できないアイテムはそのままインベントリに残ります。)
+
+
+## その他
+
+#### `/stick`
+
+木の棒を召喚します。(木の棒を持って左クリック、右クリックするとメニューを表示します。)
+
+#### `/ef`
+
+採掘上昇効果のON/OFFを切り替えます。
+
+#### `/ef smart`
+
+1分毎に表示される採掘速度上昇値の内訳表示のON/OFFを切り替えます。
+
+#### `/hat`
+
+右手に持っているブロック系アイテムを頭に被ります。
+
+#### `/glist`
+
+各サーバーに接続しているプレイヤーを一覧表示します。
+
+#### `/fc craft`
+
+FastCraft の画面を表示します。
+
+#### `/map`
+
+現在座標の Dynmap の URL を表示します。
+
+#### `/stickmenu` (`/sm`)
+
+棒メニューを表示します。
+
+#### `/preset`
+
+運営チームからの配布アイテムを受け取ります。
+
+#### `/ec`
+
+「どこでもエンダーチェスト」を開きます。（詳細は[こちら](https://www.seichi.network/otherfuncs)をご覧ください。）
+
+#### `/shareinv`
+
+「インベントリ共有」を行います。（詳細は[こちら](https://www.seichi.network/otherfuncs)をご覧ください。）
+
+#### `/fd`
+
+​「4次元ポケット」を開きます。（詳細は[こちら](https://www.seichi.network/otherfuncs)​をご覧ください。）
