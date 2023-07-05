@@ -41,49 +41,49 @@
       - [`/ch list`](#ch-list)
       - [`/ch log ! p=<プレイヤー名>`](#ch-log--pプレイヤー名)
   - [保護管理](#保護管理)
-      - [`//ward`](#ward)
-      - [`//sel`](#sel)
-      - [`//pos1`](#pos1)
-      - [`//pos2`](#pos2)
-      - [`//expand <ブロック数> <方角>`](#expand-ブロック数-方角)
-      - [`//contract <ブロック数> <方角>`](#contract-ブロック数-方角)
-      - [`/rg info`](#rg-info)
-      - [`/rg list -p <プレイヤー名>`](#rg-list--p-プレイヤー名)
-      - [`/rg claim <領域名>`](#rg-claim-領域名)
-      - [`/rg remove <領域名>`](#rg-remove-領域名)
-      - [`/rg addmember <領域名> <プレイヤー名>`](#rg-addmember-領域名-プレイヤー名)
-      - [`/rg removemember <領域名> <プレイヤー名>`](#rg-removemember-領域名-プレイヤー名)
-      - [`/rg removeowner <領域名> <プレイヤー名>`](#rg-removeowner-領域名-プレイヤー名)
-      - [`/x-transfer <領域名> <プレイヤー名>`](#x-transfer-領域名-プレイヤー名)
+    - [`//ward`](#ward)
+    - [`//sel`](#sel)
+    - [`//pos1`](#pos1)
+    - [`//pos2`](#pos2)
+    - [`//expand <ブロック数> <方角>`](#expand-ブロック数-方角)
+    - [`//contract <ブロック数> <方角>`](#contract-ブロック数-方角)
+    - [`/rg info`](#rg-info)
+    - [`/rg list -p <プレイヤー名>`](#rg-list--p-プレイヤー名)
+    - [`/rg claim <領域名>`](#rg-claim-領域名)
+    - [`/rg remove <領域名>`](#rg-remove-領域名)
+    - [`/rg addmember <領域名> <プレイヤー名>`](#rg-addmember-領域名-プレイヤー名)
+    - [`/rg removemember <領域名> <プレイヤー名>`](#rg-removemember-領域名-プレイヤー名)
+    - [`/rg removeowner <領域名> <プレイヤー名>`](#rg-removeowner-領域名-プレイヤー名)
+    - [`/x-transfer <領域名> <プレイヤー名>`](#x-transfer-領域名-プレイヤー名)
   - [飛行関連](#飛行関連)
-      - [`/fly add <数字>`](#fly-add-数字)
-      - [`/fly endless`](#fly-endless)
-      - [`/fly finish`](#fly-finish)
+    - [`/fly add <数字>`](#fly-add-数字)
+    - [`/fly endless`](#fly-endless)
+    - [`/fly finish`](#fly-finish)
   - [Mebius関連](#mebius関連)
-      - [`/mebius naming <名前>`](#mebius-naming-名前)
-      - [`/mebius nickname`](#mebius-nickname)
-      - [`/mebius nickname set <名前>`](#mebius-nickname-set-名前)
-      - [`/mebius nickname reset`](#mebius-nickname-reset)
-      - [`/mebius convert`](#mebius-convert)
-      - [`/mebius`](#mebius)
+    - [`/mebius naming <名前>`](#mebius-naming-名前)
+    - [`/mebius nickname`](#mebius-nickname)
+    - [`/mebius nickname set <名前>`](#mebius-nickname-set-名前)
+    - [`/mebius nickname reset`](#mebius-nickname-reset)
+    - [`/mebius convert`](#mebius-convert)
+    - [`/mebius`](#mebius)
   - [MineStack関連](#minestack関連)
-      - [`/minestack on`](#minestack-on)
-      - [`/minestack off`](#minestack-off)
-      - [`/minestack open <カテゴリー番号> <ページ番号>`](#minestack-open-カテゴリー番号-ページ番号)
-      - [`/minestack store-all`](#minestack-store-all)
+    - [`/minestack on`](#minestack-on)
+    - [`/minestack off`](#minestack-off)
+    - [`/minestack open <カテゴリー番号> <ページ番号>`](#minestack-open-カテゴリー番号-ページ番号)
+    - [`/minestack store-all`](#minestack-store-all)
   - [その他](#その他)
-      - [`/stick`](#stick)
-      - [`/ef`](#ef)
-      - [`/ef smart`](#ef-smart)
-      - [`/hat`](#hat)
-      - [`/glist`](#glist)
-      - [`/fc craft`](#fc-craft)
-      - [`/map`](#map)
-      - [`/stickmenu` (`/sm`)](#stickmenu-sm)
-      - [`/present`](#present)
-      - [`/ec`](#ec)
-      - [`/shareinv`](#shareinv)
-      - [`/fd`](#fd)
+    - [`/stick`](#stick)
+    - [`/ef`](#ef)
+    - [`/ef smart`](#ef-smart)
+    - [`/hat`](#hat)
+    - [`/glist`](#glist)
+    - [`/fc craft`](#fc-craft)
+    - [`/map`](#map)
+    - [`/stickmenu` (`/sm`)](#stickmenu-sm)
+    - [`/present`](#present)
+    - [`/ec`](#ec)
+    - [`/shareinv`](#shareinv)
+    - [`/fd`](#fd)
 
 ----
 
@@ -274,35 +274,35 @@
 
 ## 保護管理
 
-#### `//ward`
+### `//ward`
 
 保護の範囲設定に使用する木の斧をインベントリに追加します。
 
-#### `//sel`
+### `//sel`
 
 範囲設定を解除します。
 
-#### `//pos1`
+### `//pos1`
 
 現在地点を選択範囲の起点に設定します。
 
-#### `//pos2`
+### `//pos2`
 
 現在地点を選択範囲の終点に設定します。
 
-#### `//expand <ブロック数> <方角>`
+### `//expand <ブロック数> <方角>`
 
 選択している範囲を指定した方角に指定したブロック数分 **拡大** します。
 
-#### `//contract <ブロック数> <方角>`
+### `//contract <ブロック数> <方角>`
 
 選択している範囲を指定した方角に指定したブロック数分 **縮小** します。
 
-#### `/rg info`
+### `/rg info`
 
 現在地点の保護情報を表示します。
 
-#### `/rg list -p <プレイヤー名>`
+### `/rg list -p <プレイヤー名>`
 
 指定したプレイヤーの保護を検索します。
 
@@ -315,23 +315,23 @@
 > 参考: [プレイヤーの保護検索コマンドが自分自身のMCID以外機能しなくなっている - #不具合報告-ゲーム内](https://discord.com/channels/237758724121427969/1106084808897069117)
 > (整地鯖公式Discordに移動します。)
 
-#### `/rg claim <領域名>`
+### `/rg claim <領域名>`
 
 指定した範囲を指定した領域名で保護します。
 
-#### `/rg remove <領域名>`
+### `/rg remove <領域名>`
 
 指定した領域名の保護を削除します。
 
-#### `/rg addmember <領域名> <プレイヤー名>`
+### `/rg addmember <領域名> <プレイヤー名>`
 
 指定した領域名の保護のメンバーに指定したプレイヤーを追加します。
 
-#### `/rg removemember <領域名> <プレイヤー名>`
+### `/rg removemember <領域名> <プレイヤー名>`
 
 指定した領域名の保護のメンバーから指定したプレイヤーを削除します。
 
-#### `/rg removeowner <領域名> <プレイヤー名>`
+### `/rg removeowner <領域名> <プレイヤー名>`
 
 指定した領域名の保護のオーナーから指定したプレイヤーを削除します。
 
@@ -340,61 +340,61 @@
 > 保護のオーナーだけを削除するため、メンバーは削除されません。
 > 乗っ取り等を回避するために [**メンバーを最初に削除しましょう**](#rg-removemember-領域名-プレイヤー名)
 
-#### `/x-transfer <領域名> <プレイヤー名>`
+### `/x-transfer <領域名> <プレイヤー名>`
 
 指定した領域名の保護のオーナーを指定したプレイヤーに譲与します。
 
 ## 飛行関連
 
-#### `/fly add <数字>`
+### `/fly add <数字>`
 
 `<数字>`分間、飛行可能になります。
 
-#### `/fly endless`
+### `/fly endless`
 
 終了するまでの間、飛行可能になります。
 
-#### `/fly finish`
+### `/fly finish`
 
 飛行可能状態を解除します。
 
 ## Mebius関連
 
-#### `/mebius naming <名前>`
+### `/mebius naming <名前>`
 
 Mebiusの名前を指定した名前に変更します。
 
-#### `/mebius nickname`
+### `/mebius nickname`
 
 Mebiusからの呼び名を表示します。
 
-#### `/mebius nickname set <名前>`
+### `/mebius nickname set <名前>`
 
 Mebiusからの呼び名を指定した名前に変更します。
 
-#### `/mebius nickname reset`
+### `/mebius nickname reset`
 
 Mebiusからの呼び名をリセットします。
 
-#### `/mebius convert`
+### `/mebius convert`
 
 Mebiusの素材変換を行います。
 
-#### `/mebius`
+### `/mebius`
 
 Mebius に関するコマンドを一覧表示します。
 
 ## MineStack関連
 
-#### `/minestack on`
+### `/minestack on`
 
 Minestack の自動収集機能をONにします。
 
-#### `/minestack off`
+### `/minestack off`
 
 Minestack の自動収集機能をOFFにします。
 
-#### `/minestack open <カテゴリー番号> <ページ番号>`
+### `/minestack open <カテゴリー番号> <ページ番号>`
 
 指定したカテゴリーの MineStack ページを開きます。
 
@@ -403,57 +403,56 @@ Minestack の自動収集機能をOFFにします。
 - トップページを開く: `/minestack open 0 0`
 - ガチャ品ページを開く: `/minestack open 7 1`
 
-#### `/minestack store-all`
+### `/minestack store-all`
 
 インベントリに存在するアイテムをすべて MineStack に収納します。 (収納できないアイテムはそのままインベントリに残ります。)
 
-
 ## その他
 
-#### `/stick`
+### `/stick`
 
 木の棒を召喚します。(木の棒を持って左クリック、右クリックするとメニューを表示します。)
 
-#### `/ef`
+### `/ef`
 
 採掘上昇効果のON/OFFを切り替えます。
 
-#### `/ef smart`
+### `/ef smart`
 
 1分毎に表示される採掘速度上昇値の内訳表示のON/OFFを切り替えます。
 
-#### `/hat`
+### `/hat`
 
 右手に持っているブロック系アイテムを頭に被ります。
 
-#### `/glist`
+### `/glist`
 
 各サーバーに接続しているプレイヤーを一覧表示します。
 
-#### `/fc craft`
+### `/fc craft`
 
 FastCraft の画面を表示します。
 
-#### `/map`
+### `/map`
 
 現在座標の Dynmap の URL を表示します。
 
-#### `/stickmenu` (`/sm`)
+### `/stickmenu` (`/sm`)
 
 棒メニューを表示します。
 
-#### `/present`
+### `/present`
 
 運営チームからの配布アイテムを受け取ります。
 
-#### `/ec`
+### `/ec`
 
 「どこでもエンダーチェスト」を開きます。（詳細は[こちら](https://www.seichi.network/otherfuncs)をご覧ください。）
 
-#### `/shareinv`
+### `/shareinv`
 
 「インベントリ共有」を行います。（詳細は[こちら](https://www.seichi.network/otherfuncs)をご覧ください。）
 
-#### `/fd`
+### `/fd`
 
 ​「4次元ポケット」を開きます。（詳細は[こちら](https://www.seichi.network/otherfuncs)​をご覧ください。）
