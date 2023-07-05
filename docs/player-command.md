@@ -79,7 +79,7 @@
     - [`/glist`](#glist)
     - [`/fc craft`](#fc-craft)
     - [`/map`](#map)
-    - [`/stickmenu` (`/sm`)](#stickmenu-sm)
+    - [`/stickmenu`](#stickmenu)
     - [`/present`](#present)
     - [`/ec`](#ec)
     - [`/shareinv`](#shareinv)
@@ -102,6 +102,8 @@
 他のワールドへ移動する際に使用します。
 
 #### `/mvspawn`
+
+alias: `/mvs`
 
 今いるワールドのスポーン地点に移動します。
 
@@ -300,6 +302,8 @@
 
 ### `/rg info`
 
+alias: `/rg info`
+
 現在地点の保護情報を表示します。
 
 ### `/rg list -p <プレイヤー名>`
@@ -325,13 +329,19 @@
 
 ### `/rg addmember <領域名> <プレイヤー名>`
 
+alias: `/rg am <領域名> <プレイヤー名>`
+
 指定した領域名の保護のメンバーに指定したプレイヤーを追加します。
 
 ### `/rg removemember <領域名> <プレイヤー名>`
 
+alias: `/rg rm <領域名> <プレイヤー名>`
+
 指定した領域名の保護のメンバーから指定したプレイヤーを削除します。
 
 ### `/rg removeowner <領域名> <プレイヤー名>`
+
+alias: `/rg ro <領域名> <プレイヤー名>`
 
 指定した領域名の保護のオーナーから指定したプレイヤーを削除します。
 
@@ -386,6 +396,8 @@ Mebius に関するコマンドを一覧表示します。
 
 ## MineStack関連
 
+全てのコマンドは `/ms` として使うことも出来ます。
+
 ### `/minestack on`
 
 Minestack の自動収集機能をONにします。
@@ -437,7 +449,9 @@ FastCraft の画面を表示します。
 
 現在座標の Dynmap の URL を表示します。
 
-### `/stickmenu` (`/sm`)
+### `/stickmenu`
+
+alias: `/sm`
 
 棒メニューを表示します。
 
