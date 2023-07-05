@@ -1,10 +1,10 @@
-# CommandReference - Player Command
+# Player Command
 
 プレイヤーが使用できる全てのコマンドリファレンス。
 
 ----
 
-- [CommandReference - Player Command](#commandreference---player-command)
+- [Player Command](#player-command)
   - [移動系](#移動系)
     - [基本](#基本)
       - [`/hub`](#hub)
