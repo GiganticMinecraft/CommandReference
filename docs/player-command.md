@@ -404,6 +404,8 @@ alias: `/rg ro <領域名> <プレイヤー名>`
 
 ### `/fly finish`
 
+alias: `/fly end`
+
 飛行可能状態を解除します。
 
 ## Mebius関連
