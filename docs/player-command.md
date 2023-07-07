@@ -84,6 +84,7 @@
     - [`/fc craft`](#fc-craft)
     - [`/map`](#map)
     - [`/stickmenu`](#stickmenu)
+    - [`/stickmenu b`](#stickmenu-b)
     - [`/present`](#present)
     - [`/ec`](#ec)
     - [`/shareinv`](#shareinv)
@@ -491,6 +492,12 @@ FastCraft の画面を表示します。
 alias: `/sm`
 
 棒メニューを表示します。
+
+### `/stickmenu b`
+
+alias: `/sm b`
+
+棒メニューBを表示します。
 
 ### `/present`
 
