@@ -30,7 +30,7 @@
 
 時間を表示します。。次の税収の時間などの参考になります。
 
-#### `/towny top residents [all|town|nation]`
+### `/towny top residents [all|town|nation]`
 
 指定した種類の住民数ランキングを表示します。
 
