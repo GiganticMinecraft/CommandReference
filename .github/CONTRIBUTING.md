@@ -22,7 +22,9 @@
     - CONTRIBUTING.md -- コントリビュートに関するガイド (本来外部貢献者が編集する必要はありません。)
 .docs /
     - CNAME -- GitHub Pages で使用するドメインを指定するファイル (本来外部貢献者が編集する必要はありません。)
-    - player-command.md -- プレイヤーが使用できる全てのコマンドリファレンスを記述するファイル (cmd.seichi.click/player-command)
+    player / -- プレイヤー関連のコマンドリファレンス
+        - general-command.md -- プレイヤーが使用できる全てのコマンドリファレンスを記述するファイル (cmd.seichi.click/player-command)
+        - towny-command.md -- プレイヤーが使用できるTownyのコマンドリファレンスを記述するファイル (cmd.seichi.click/towny-command)
     - README.md (cmd.seichi.click)
 --- (以下略)
 ```

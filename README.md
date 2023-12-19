@@ -6,7 +6,9 @@
 
 ```txt
 docs / -- このディレクトリ配下が GitHub Pages によって公開されます。
-    player-command.md -- プレイヤーが使用できる全てのコマンドリファレンス
+    player / -- プレイヤー向けのコマンドリファレンス
+        general-command.md -- プレイヤーが使用できる全てのコマンドリファレンス
+        towny-command.md -- Towny 関連のコマンドリファレンス
 ```
 
 ## コントリビュート
