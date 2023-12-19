@@ -4,7 +4,9 @@ const withNextra = require('nextra')({
 });
 
 module.exports = withNextra({
+  basePath: process.env.GITHUB_ACTIONS && '/CommandReference',
   output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true
   }
