@@ -1,0 +1,41 @@
+{
+  "name": "command-reference",
+  "version": "1.0.0",
+  "description": "ギガンティック☆整地鯖内で使用できるコマンドリファレンス",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GiganticMinecraft/CommandReference"
+  },
+  "packageManager": "pnpm@8.10.2",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d build",
+    "format": "prettier --write \"./**/**/*.{ts,tsx,mdx}\"",
+    "check": "prettier --check \"./**/**/*.{ts,tsx,mdx}\"",
+    "lint-staged": "next lint && prettier --write \"./**/**/*.{ts,tsx,mdx}\"",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "^14.0.4",
+    "nextra": "^2.13.2",
+    "nextra-theme-docs": "^2.13.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}

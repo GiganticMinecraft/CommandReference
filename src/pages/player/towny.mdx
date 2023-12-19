@@ -1,121 +1,10 @@
-# Towny Command
+import { WarningCallout } from '../../molecules/CmdCallout';
+
+# Towny
 
 プレイヤーが使用できる Towny のコマンドリファレンス。
 
-----
-
-- [Towny コマンド](#towny-コマンド)
-  - [`/towny`](#towny)
-  - [`/towny ?`](#towny-)
-  - [`/towny map`](#towny-map)
-  - [`/towny prices`](#towny-prices)
-  - [`/towny time`](#towny-time)
-  - [`/towny top residents [all|town|nation]`](#towny-top-residents-alltownnation)
-  - [`/towny top land [all|town|resident]`](#towny-top-land-alltownresident)
-- [町コマンド (`/town`)](#町コマンド-town)
-  - [`/town`](#town)
-  - [`/town ?`](#town-)
-  - [`/town list`](#town-list)
-  - [`/town <町名>`](#town-町名)
-  - [`/town here`](#town-here)
-  - [`/town new <町名> [プレイヤー名]`](#town-new-町名-プレイヤー名)
-  - [`/town add <プレイヤー名>`](#town-add-プレイヤー名)
-  - [`/town kick <プレイヤー名>`](#town-kick-プレイヤー名)
-  - [`/town join <町名>`](#town-join-町名)
-  - [`/town leave`](#town-leave)
-  - [`/town spawn [町名]`](#town-spawn-町名)
-  - [`/town claim [値]`](#town-claim-値)
-  - [`/town claim outpost`](#town-claim-outpost)
-  - [`/town claim auto`](#town-claim-auto)
-  - [`/town unclaim [値]`](#town-unclaim-値)
-  - [`/town unclaim all`](#town-unclaim-all)
-  - [`/town withdraw <値>`](#town-withdraw-値)
-  - [`/town deposit <値>`](#town-deposit-値)
-  - [`/town delete <町名>`](#town-delete-町名)
-  - [`/town outpost [値]`](#town-outpost-値)
-  - [`/town ranklist`](#town-ranklist)
-  - [`/town rank add <プレイヤー名> <ランク名>`](#town-rank-add-プレイヤー名-ランク名)
-  - [`/town remove <プレイヤー名> <ランク名>`](#town-remove-プレイヤー名-ランク名)
-  - [`/town reslist`](#town-reslist)
-  - [`/town set board <メッセージ>`](#town-set-board-メッセージ)
-  - [`/town set mayor <プレイヤー名>`](#town-set-mayor-プレイヤー名)
-  - [`/town set homeblock`](#town-set-homeblock)
-  - [`/town set spawn`](#town-set-spawn)
-  - [`/town set name <新しい町名>`](#town-set-name-新しい町名)
-  - [`/town set outpost`](#town-set-outpost)
-  - [`/town set perm <on|off>`](#town-set-perm-onoff)
-  - [`/town set perm <権限> <on|off>`](#town-set-perm-権限-onoff)
-  - [`/town set tag <タグ>`](#town-set-tag-タグ)
-  - [`/town set tag clear`](#town-set-tag-clear)
-  - [`/town set texes <値>`](#town-set-texes-値)
-  - [`/town set plottax <値>`](#town-set-plottax-値)
-  - [`/town set plotprice <値>`](#town-set-plotprice-値)
-  - [`/town set shoptax <値>`](#town-set-shoptax-値)
-  - [`/town set shopprice <値>`](#town-set-shopprice-値)
-  - [`/town set embassytax <値>`](#town-set-embassytax-値)
-  - [`/town set embassyprice <値>`](#town-set-embassyprice-値)
-  - [`/town toggle <フラグ>`](#town-toggle-フラグ)
-- [小区画](#小区画)
-  - [`/plot` / `/plot ?`](#plot--plot-)
-  - [`/plot claim`](#plot-claim)
-  - [`/plot claim auto`](#plot-claim-auto)
-  - [`/plot fs <値> [circle|rect] [半径]`](#plot-fs-値-circlerect-半径)
-  - [`/plot nfs [circle|rect] [半径]`](#plot-nfs-circlerect-半径)
-  - [`/plot perm`](#plot-perm)
-  - [`/plot set [reset|shop|embassy|arena|wilds]`](#plot-set-resetshopembassyarenawilds)
-  - [`/plot set <名前>`](#plot-set-名前)
-  - [`/plot set perm <on|off>`](#plot-set-perm-onoff)
-  - [`/plot set perm <resident|ally|outsider> <on|off>`](#plot-set-perm-residentallyoutsider-onoff)
-  - [`/plot set perm <build|destroy|switch|itemuse> <on|off>`](#plot-set-perm-builddestroyswitchitemuse-onoff)
-  - [`/plot set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`](#plot-set-perm-residentallyoutsider-builddestroyswitchitemuse-onoff)
-  - [`/plot set perm reset`](#plot-set-perm-reset)
-  - [`/plot toggle <フラグ>`](#plot-toggle-フラグ)
-  - [`/plot clear`](#plot-clear)
-- [住民コマンド (`/resident`)](#住民コマンド-resident)
-  - [`/resident`](#resident)
-  - [`/resident ?`](#resident-)
-  - [`/resident <プレイヤー名>`](#resident-プレイヤー名)
-  - [`/resident friend [add|remove] <プレイヤー名>`](#resident-friend-addremove-プレイヤー名)
-  - [`/resident friend clearlist`](#resident-friend-clearlist)
-  - [`/resident friend list`](#resident-friend-list)
-  - [`/resident spawn`](#resident-spawn)
-  - [`/resident toggle map`](#resident-toggle-map)
-  - [`/resident toggle townclaim`](#resident-toggle-townclaim)
-  - [`/resident toggle plotborder`](#resident-toggle-plotborder)
-  - [`/resident set perm <on|off>`](#resident-set-perm-onoff)
-  - [`/resident set perm <resident|ally|outsider> <on|off>`](#resident-set-perm-residentallyoutsider-onoff)
-  - [`/resident set perm <build|destroy|switch|itemuse> <on|off>`](#resident-set-perm-builddestroyswitchitemuse-onoff)
-  - [`/resident set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`](#resident-set-perm-residentallyoutsider-builddestroyswitchitemuse-onoff)
-  - [`/resident set perm reset`](#resident-set-perm-reset)
-- [国コマンド (`/nation`)](#国コマンド-nation)
-  - [`/nation`](#nation)
-  - [`/nation ?`](#nation-)
-  - [`/nation list`](#nation-list)
-  - [`/nation online`](#nation-online)
-  - [`/nation <国名>`](#nation-国名)
-  - [`/nation leave`](#nation-leave)
-  - [`/nation withdraw <値>`](#nation-withdraw-値)
-  - [`/nation deposit <値>`](#nation-deposit-値)
-  - [`/nation new <国名>`](#nation-new-国名)
-  - [`/nation new <国名> <首都名>`](#nation-new-国名-首都名)
-  - [`/nation add <町名>`](#nation-add-町名)
-  - [`/nation kick <町名>`](#nation-kick-町名)
-  - [`/nation delete <国名>`](#nation-delete-国名)
-  - [`/nation ally [add|remove] <国名>`](#nation-ally-addremove-国名)
-  - [`/nation enemy [add|remove] <国名>`](#nation-enemy-addremove-国名)
-  - [`/nation rank [add|remove] <プレイヤー名> <ランク名>`](#nation-rank-addremove-プレイヤー名-ランク名)
-  - [`/nation set king <プレイヤー名>`](#nation-set-king-プレイヤー名)
-  - [`/nation set capital <町名>`](#nation-set-capital-町名)
-  - [`/nation set taxes <値>`](#nation-set-taxes-値)
-  - [`/nation set name <国名>`](#nation-set-name-国名)
-  - [`/nation set surname <プレイヤー名> <称号>`](#nation-set-surname-プレイヤー名-称号)
-  - [`/nation set tag <タグ>`](#nation-set-tag-タグ)
-  - [`/nation set tag clear`](#nation-set-tag-clear)
-  - [`/nation toggle neutral`](#nation-toggle-neutral)
-
-----
-
-## Towny コマンド
+## Townyコマンド (`/towny`)
 
 ### `/towny`
 
@@ -143,11 +32,11 @@
 
 指定しない場合は `all` として実行される
 
-| 引数 | 説明 |
-| ---- | ---- |
-| `all` | 全ての町と国 |
-| `town` | 全ての町 |
-| `nation` | 全ての国 |
+| 引数     | 説明         |
+| -------- | ------------ |
+| `all`    | 全ての町と国 |
+| `town`   | 全ての町     |
+| `nation` | 全ての国     |
 
 ### `/towny top land [all|town|resident]`
 
@@ -155,11 +44,11 @@
 
 指定しない場合は `all` として実行される
 
-| 引数 | 説明 |
-| ---- | ---- |
-| `all` | 全ての町と国 |
-| `town` | 町ごと |
-| `resident` | 住民ごと |
+| 引数       | 説明         |
+| ---------- | ------------ |
+| `all`      | 全ての町と国 |
+| `town`     | 町ごと       |
+| `resident` | 住民ごと     |
 
 ## 町コマンド (`/town`)
 
@@ -255,9 +144,9 @@
 
 指定した分のお金を町の銀行に預けます。
 
-> **Warning**
->
-> お金を入れたままにすると不具合でお金が消失することがあります。
+<WarningCallout>
+  お金を入れたままにすると不具合でお金が消失することがあります。
+</WarningCallout>
 
 ### `/town delete <町名>`
 
@@ -323,11 +212,11 @@
 
 住民権限の許可/拒否を設定します。
 
-| 権限 | 説明 |
-| ---- | ---- |
-| `build` | 町の土地での建築 |
-| `destroy` | 町の土地での破壊 |
-| `switch` | 町の土地でのスイッチの操作 |
+| 権限      | 説明                       |
+| --------- | -------------------------- |
+| `build`   | 町の土地での建築           |
+| `destroy` | 町の土地での破壊           |
+| `switch`  | 町の土地でのスイッチの操作 |
 | `itemuse` | 町の土地でのアイテムの使用 |
 
 ### `/town set tag <タグ>`
@@ -342,17 +231,19 @@
 
 税金を設定します。
 
-> **Warning**
->
-> 銀行に不具合があるため、設定するのはおすすめしません。
+<WarningCallout>
+  現行バージョン (1.12.2) では銀行機能に不具合があるため,
+  税金機能を利用することはお勧めしていません。
+</WarningCallout>
 
 ### `/town set plottax <値>`
 
 プロットの税金を設定します。
 
-> **Warning**
->
-> 銀行に不具合があるため、設定するのはおすすめしません。
+<WarningCallout>
+  現行バージョン (1.12.2) では銀行機能に不具合があるため,
+  税金機能を利用することはお勧めしていません。
+</WarningCallout>
 
 ### `/town set plotprice <値>`
 
@@ -362,9 +253,10 @@
 
 商店区画の税金を設定します。
 
-> **Warning**
->
-> 銀行に不具合があるため、設定するのはおすすめしません。
+<WarningCallout>
+  現行バージョン (1.12.2) では銀行機能に不具合があるため,
+  税金機能を利用することはお勧めしていません。
+</WarningCallout>
 
 ### `/town set shopprice <値>`
 
@@ -374,9 +266,10 @@
 
 大使館の税金を設定します。
 
-> **Warning**
->
-> 銀行に不具合があるため、設定するのはおすすめしません。
+<WarningCallout>
+  現行バージョン (1.12.2) では銀行機能に不具合があるため,
+  税金機能を利用することはお勧めしていません。
+</WarningCallout>
 
 ### `/town set embassyprice <値>`
 
@@ -386,15 +279,15 @@
 
 指定したフラグ(設定)を変更します。
 
-| フラグ | 説明 |
-| ---- | ---- |
-| `explosion` | 爆発による破壊`*` |
-| `fire` | 火の延焼`*` |
-| `mobs` | 敵対Mobの出現`*` |
-| `public` | 町のホームブロックの場所を公開するか |
-| `pvp` | 町の中でのPvPの許可するか |
-| `taxpercent` | 税金を割合で設定するか |
-| `open` | 町の参加を誰でもできるか (ONの場合 [`/town join`](#town-join-町名) で誰でも参加できる) |
+| フラグ       | 説明                                                                                   |
+| ------------ | -------------------------------------------------------------------------------------- |
+| `explosion`  | 爆発による破壊`*`                                                                      |
+| `fire`       | 火の延焼`*`                                                                            |
+| `mobs`       | 敵対Mobの出現`*`                                                                       |
+| `public`     | 町のホームブロックの場所を公開するか                                                   |
+| `pvp`        | 町の中でのPvPの許可するか                                                              |
+| `taxpercent` | 税金を割合で設定するか                                                                 |
+| `open`       | 町の参加を誰でもできるか (ONの場合 [`/town join`](#town-join-町名) で誰でも参加できる) |
 
 `*`: 設定関係なく強制的にOFFになる。
 
@@ -432,13 +325,13 @@
 
 今いる小区画の種類を変更します。
 
-| 引数 | 説明 |
-| ---- | ---- |
-| `reset` | 小区画の設定をリセットします。|
-| `shop` | 商店区画に設定します。 |
-| `embassy` | 大使館に設定します。 |
-| `arena` | アリーナに設定します。 |
-| `wilds` | 野生地(荒野)に設定します。 |
+| 引数      | 説明                           |
+| --------- | ------------------------------ |
+| `reset`   | 小区画の設定をリセットします。 |
+| `shop`    | 商店区画に設定します。         |
+| `embassy` | 大使館に設定します。           |
+| `arena`   | アリーナに設定します。         |
+| `wilds`   | 野生地(荒野)に設定します。     |
 
 ### `/plot set <名前>`
 
@@ -468,11 +361,11 @@
 
 - resident/ally/outsiderの全員が対象です。
 
-| 権限 | 説明 |
-| ---- | ---- |
-| `build` | 設置 |
-| `destroy` | 破壊 |
-| `switch` | スイッチの操作 |
+| 権限      | 説明           |
+| --------- | -------------- |
+| `build`   | 設置           |
+| `destroy` | 破壊           |
+| `switch`  | スイッチの操作 |
 | `itemuse` | アイテムの使用 |
 
 ### `/plot set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`
@@ -487,12 +380,12 @@
 
 指定したフラグ(設定)を変更します。
 
-| フラグ | 説明 |
-| ---- | ---- |
-| `explosion` | 爆発による破壊`*` |
-| `fire` | 火の延焼`*` |
-| `mobs` | 敵対Mobの出現`*` |
-| `pvp` | 町の中でのPvPの許可するか |
+| フラグ      | 説明                      |
+| ----------- | ------------------------- |
+| `explosion` | 爆発による破壊`*`         |
+| `fire`      | 火の延焼`*`               |
+| `mobs`      | 敵対Mobの出現`*`          |
+| `pvp`       | 町の中でのPvPの許可するか |
 
 ### `/plot clear`
 
@@ -568,11 +461,11 @@
 
 - resident/ally/outsiderの全員が対象です。
 
-| 権限 | 説明 |
-| ---- | ---- |
-| `build` | 設置 |
-| `destroy` | 破壊 |
-| `switch` | スイッチの操作 |
+| 権限      | 説明           |
+| --------- | -------------- |
+| `build`   | 設置           |
+| `destroy` | 破壊           |
+| `switch`  | スイッチの操作 |
 | `itemuse` | アイテムの使用 |
 
 ### `/resident set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`
@@ -667,9 +560,10 @@
 
 税金を設定します。
 
-> **Warning**
->
-> 銀行に不具合があるため、設定するのはおすすめしません。
+<WarningCallout>
+  現行バージョン (1.12.2) では銀行機能に不具合があるため,
+  税金機能を利用することはお勧めしていません。
+</WarningCallout>
 
 ### `/nation set name <国名>`
 

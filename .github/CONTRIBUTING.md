@@ -1,4 +1,4 @@
-# コントリビュートガイド (編集中)
+# コントリビュートガイド
 
 ## 主な流れ
 
@@ -14,25 +14,21 @@
 10. `cmd.seichi.click` にデプロイされる
     - デプロイは自動で行われます。
 
-## リファレンスの構成
+## 開発環境の構築
 
-```text
-.github /
-    - CODEOWNERS -- 特定のファイルに対してレビュワーを強制的に指定するファイル (本来外部貢献者が編集する必要はありません。)
-    - CONTRIBUTING.md -- コントリビュートに関するガイド (本来外部貢献者が編集する必要はありません。)
-.docs /
-    - CNAME -- GitHub Pages で使用するドメインを指定するファイル (本来外部貢献者が編集する必要はありません。)
-    player / -- プレイヤー関連のコマンドリファレンス
-        - general-command.md -- プレイヤーが使用できる全てのコマンドリファレンスを記述するファイル (cmd.seichi.click/player-command)
-        - towny-command.md -- プレイヤーが使用できるTownyのコマンドリファレンスを記述するファイル (cmd.seichi.click/towny-command)
-    - README.md (cmd.seichi.click)
---- (以下略)
+CommandReference は以下の環境で動作します。
+
+- Node.js v18.x , v20.x
+- pnpm v8.x
+- Next.js v14.x
+
+```shell
+# 依存関係をインストールする
+pnpm install
+
+# 開発サーバーでの起動
+pnpm dev
+
+# ビルド
+pnpm build
 ```
-
-## 使用するエディターについて
-
-`CommandReference` を編集する際は [Visual Studio Code](https://code.visualstudio.com/), 拡張機能 [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) の使用を推奨します。
-
-コマンドリファレンスの初めは目次で構成されています。この目次は Visual Studio Code の機能で自動生成されているため新しく目次を追加すると自動で更新されます。(Visual Studio Code を使用せず、Vim などのエディタを使用している際は手動で編集してください。)
-
-![コマンドリファレンスの目次](./image/table-of-contents.png)
