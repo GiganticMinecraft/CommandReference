@@ -17,4 +17,4 @@
 ### プレイヤー向け
 
 - [プレイヤーコマンド](./player/general-command.md)
-  - [Townyコマンド](./player/towny-command.md)
+- [Townyコマンド](./player/towny-command.md)
