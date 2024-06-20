@@ -15,3 +15,7 @@
 - alias: `/fly end`
 
 飛行可能状態を解除します。
+
+---
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/flying.md)
