@@ -1,0 +1,15 @@
+[book]
+src = "src"
+title = "GiganticMinecraft CommandReference"
+description = "ギガンティック☆整地鯖内で使用できるコマンドリファレンス"
+authors = ["GiganticMinecraft Admins (m1sk9, KisaragiEffective)", "conarin", "SigureRuri"]
+language = "ja"
+multilingual = false
+
+[rust]
+edition = "2021"
+
+[build]
+build-dir = "build"
+create-missing = false
+use-default-preprocessors = true
