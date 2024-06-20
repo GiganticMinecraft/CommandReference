@@ -73,3 +73,7 @@
 [​「4次元ポケット」][other-function] を開きます。
 
 [other-function]: https://www.seichi.network/otherfuncs
+
+----
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/other.md)

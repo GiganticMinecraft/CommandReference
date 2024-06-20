@@ -130,3 +130,7 @@
 ----
 
 [^1]: 銀行に不具合があるため、設定するのはおすすめしません。
+
+----
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/nation.md)

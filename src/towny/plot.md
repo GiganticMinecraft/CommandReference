@@ -115,3 +115,7 @@
 ## `/plot clear`
 
 今いる小区画の看板を撤去します。
+
+----
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/plot.md)

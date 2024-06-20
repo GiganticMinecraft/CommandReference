@@ -25,3 +25,7 @@ Mebiusの素材変換を行います。
 ## `/mebius`
 
 Mebius に関するコマンドを一覧表示します。
+
+---
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/mebius.md)

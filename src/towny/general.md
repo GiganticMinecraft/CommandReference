@@ -51,3 +51,7 @@
 | `all` | 全ての町と国 |
 | `town` | 町ごと |
 | `resident` | 住民ごと |
+
+----
+
+[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/general.md)
