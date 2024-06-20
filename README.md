@@ -1,32 +1,21 @@
 # CommandReference
 
-ギガンティック☆整地鯖のゲームサーバー内で使用できるコマンドに関するリファレンス。
+このサイトはギガンティック☆整地鯖内で使用できるコマンドの使い方などをまとめているコマンドリファレンスサイトです。
 
-## 構成
+[運営チームと有志のプレイヤー](https://github.com/GiganticMinecraft/CommandReference/graphs/contributors)により管理しています。
 
-```txt
-docs / -- このディレクトリ配下が GitHub Pages によって公開されます。
-    player / -- プレイヤー向けのコマンドリファレンス
-        general-command.md -- プレイヤーが使用できる全てのコマンドリファレンス
-        towny-command.md -- Towny 関連のコマンドリファレンス
-```
+> [!NOTE]
+>
+> 使い方 (プレイヤー向け) は [こちら](https://cmd.seichi.click/usage.html)
 
-## コントリビュート
+## デプロイ
 
-新しくリファレンスを追加したり、修正する際は、このリポジトリをフォークして、プルリクエストを送ってください。
+CommandReference は [rust-lang/mdbook](https://github.com/rust-lang/mdBook) を使用し制作しています。
 
-1. 自分の GitHub アカウントに [`Fork`](https://github.com/GiganticMinecraft/CommandReference/fork) する
-2. `git clone` を実行し、自分のローカルにリポジトリをクローンする
-3. `git checkout -b <branch-name>` を実行し、新しいブランチを作成する
-4. 編集する
-5. `git commit -am "<コミット内容>` を実行し、コミットする (コンベンショナルコミットは推奨していませんが、ある程度わかりやすいコミットメッセージでコミットしてください。)
-6. `git push`
-7. `GiganticMinecraft/CommandReference` に対してプルリクエストを送る
-8. レビューを受ける
-9. マージされる
-10. `cmd.seichi.click` にデプロイされる
-    - デプロイは自動で行われます。
+デプロイは GitHub Pages を使用しています。これらの設定は運営チームが行っています。
 
-マージするには GiganticMinecraft の `@admin-team` チームに所属しているアカウントによるレビューが少なくとも1人必要です。
+## 貢献
 
-詳しい貢献方法は [CONTRIBUTING.md](./.github/CONTRIBUTING.md) を参照してください。
+CommandReference は誰でも編集に参加することができます。
+
+詳しい参加方法については [CONTRIBUTING.md](.github/CONTRIBUTING.md) をご覧ください.
