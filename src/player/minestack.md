@@ -1,4 +1,4 @@
-# MineStack関連
+# MineStack系
 
 MineStack の操作関連のコマンド群。棒メニューからでも操作可能です。
 

@@ -1,4 +1,4 @@
-# Towny: 小区画
+# Towny: 小区画コマンド
 
 ## `/plot` / `/plot ?`
 

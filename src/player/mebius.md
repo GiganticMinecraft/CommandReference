@@ -1,4 +1,4 @@
-# Mebius関連
+# Mebius系
 
 Mebius の操作関連のコマンド群。
 
