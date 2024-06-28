@@ -23,7 +23,7 @@
     {
       "customType": "regex",
       "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
-      "matchStrings": ["#\\s?renovate: lambdalisue/rs-mdbook-alerts\\s*MDBOOK_PAGETOC_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
+      "matchStrings": ["#\\s?renovate: lambdalisue/rs-mdbook-alerts\\s*MDBOOK_ALERTS_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
       "depNameTemplate": "mdbook-alerts",
       "packageNameTemplate": "slowsage/mdbook-pagetoc",
       "datasourceTemplate": "github-releases"      
