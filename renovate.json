@@ -6,7 +6,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yml$"],
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
       "matchStrings": ["#\\s?renovate: rust-lang/mdBook\\s*MDBOOK_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
       "depNameTemplate": "mdbook",
       "packageNameTemplate": "rust-lang/mdBook",
@@ -14,7 +14,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yml$"],
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
       "matchStrings": ["#\\s?renovate: slowsage/mdbook-pagetoc\\s*MDBOOK_PAGETOC_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
       "depNameTemplate": "mdbook-pagetoc",
       "packageNameTemplate": "slowsage/mdbook-pagetoc",
@@ -22,7 +22,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yml$"],
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
       "matchStrings": ["#\\s?renovate: lambdalisue/rs-mdbook-alerts\\s*MDBOOK_PAGETOC_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
       "depNameTemplate": "mdbook-alerts",
       "packageNameTemplate": "slowsage/mdbook-pagetoc",
