@@ -24,9 +24,6 @@ jobs:
       # https://github.com/slowsage/mdbook-pagetoc/releases/tag/v0.2.0
       MDBOOK_PAGETOC_VERSION: 0.2.0
 
-      # https://github.com/badboy/mdbook-toc/releases/tag/0.14.2
-      MDBOOK_TOC_VERSION: 0.14.2
-
       # https://github.com/lambdalisue/rs-mdbook-alerts/releases/tag/v0.5.2
       MDBOOK_ALERTS_VERSION: 0.5.2
     steps:
@@ -51,7 +48,6 @@ jobs:
 
       - name: Install mdbook plugins
         run: |
-          cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
           cargo install mdbook-pagetoc --version ${{ env.MDBOOK_PAGETOC_VERSION }}
           cargo install mdbook-alerts --version ${{ env.MDBOOK_ALERTS_VERSION }}
 

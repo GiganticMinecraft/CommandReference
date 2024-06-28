@@ -13,3 +13,10 @@ edition = "2021"
 build-dir = "build"
 create-missing = false
 use-default-preprocessors = true
+
+[preprocessor.alerts]
+
+[preprocessor.pagetoc]
+[output.html]
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]

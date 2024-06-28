@@ -35,13 +35,12 @@ cargo install mdbook
 mdbook にはプラグイン機能があり, このリポジトリでは以下のプラグインを使用しています.
 
 - [`mdBook-pagetoc`](https://github.com/slowsage/mdbook-pagetoc)
-- [`mdbook-toc`](https://github.com/badboy/mdbook-toc)
 - [`mdbook-alerts`](https://github.com/lambdalisue/rs-mdbook-alerts)
 
-`mdbook-toc`, `mdbook-alerts` は `cargo` でインストールできます
+`mdbook-alerts` は `cargo` でインストールできます
 
 ```sh
-cargo install mdbook-toc mdbook-alerts mdbook-pagetoc
+cargo install mdbook-alerts mdbook-pagetoc
 ```
 
 ### プレビュー表示する
