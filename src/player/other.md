@@ -2,20 +2,6 @@
 
 その他のコマンド群。
 
-- [`/stick`](#stick)
-- [`/ef`](#ef)
-- [`/ef smart`](#ef-smart)
-- [`/hat`](#hat)
-- [`/glist`](#glist)
-- [`/fc craft`](#fc-craft)
-- [`/map`](#map)
-- [`/stickmenu`](#stickmenu)
-- [`/stickmenu b`](#stickmenu-b)
-- [`/present`](#present)
-- [`/ec`](#ec)
-- [`/shareinv`](#shareinv)
-- [`/fd`](#fd)
-
 ## `/stick`
 
 木の棒を召喚します。(木の棒を持って左クリック、右クリックするとメニューを表示します)

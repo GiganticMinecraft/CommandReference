@@ -2,22 +2,6 @@
 
 土地の保護やその管理に使用するコマンド群。
 
-- [`//wand`](#wand)
-- [`//sel`](#sel)
-- [`//pos1`](#pos1)
-- [`//pos2`](#pos2)
-- [`//expand <ブロック数> <方角>`](#expand-ブロック数-方角)
-- [`//contract <ブロック数> <方角>`](#contract-ブロック数-方角)
-- [`/rg claim <領域名>`](#rg-claim-領域名)
-- [`/rg info`](#rg-info)
-- [`/rg list -p <プレイヤー名>`](#rg-list--p-プレイヤー名)
-- [`/rg remove <領域名>`](#rg-remove-領域名)
-- [`/rg addmember <領域名> <プレイヤー名>`](#rg-addmember-領域名-プレイヤー名)
-- [`/rg removemember <領域名> <プレイヤー名>`](#rg-removemember-領域名-プレイヤー名)
-- [`/rg removeowner <領域名> <プレイヤー名>`](#rg-removeowner-領域名-プレイヤー名)
-- [`/rg flag <領域名> <対象フラグ> [-g グループ名] [allow|deny]`](#rg-flag-領域名-対象フラグ--g-グループ名-allowdeny)
-- [`/x-transfer <領域名> <プレイヤー名>`](#x-transfer-領域名-プレイヤー名)
-
 ## `//wand`
 
 保護の範囲設定に使用する木の斧をインベントリに追加します。

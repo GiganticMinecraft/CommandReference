@@ -8,22 +8,6 @@
 >
 > `/ch hide` などをアルカディアで実行しても、エデンではミュートは適用されません。全てのサーバーで実行する必要があります。ご注意ください。
 
-- [`/jp <ON|OFF>` `*`](#jp-onoff-)
-- [`/tell <プレイヤー名> <メッセージ>`](#tell-プレイヤー名-メッセージ)
-- [`![メッセージ]`](#メッセージ)
-- [`/ch hide player <プレイヤー名>` `*`](#ch-hide-player-プレイヤー名-)
-- [`/ch hide channel <チャンネル名>` `*`](#ch-hide-channel-チャンネル名-)
-- [`/ch unhide player <プレイヤー名>` `*`](#ch-unhide-player-プレイヤー名-)
-- [`/ch unhide channel <チャンネル名>` `*`](#ch-unhide-channel-チャンネル名-)
-- [`/ch hide list`](#ch-hide-list)
-- [`/ch create <チャンネル名>`](#ch-create-チャンネル名)
-- [`/ch join <チャンネル名>`](#ch-join-チャンネル名)
-- [`/ch join !`](#ch-join-)
-- [`/ch leave <チャンネル名>`](#ch-leave-チャンネル名)
-- [`/ch info <チャンネル名>`](#ch-info-チャンネル名)
-- [`/ch list`](#ch-list)
-- [`/ch log ! p=<プレイヤー名>`](#ch-log--pプレイヤー名)
-
 ## `/jp <ON|OFF>` `*`
 
 日本語チャットを有効化/無効化します。

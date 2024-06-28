@@ -4,15 +4,6 @@
 
 テレポートは[別ページ](./teleport.md)にまとめています。
 
-- [`/hub`](#hub)
-- [`/spawn`](#spawn)
-- [`/mvspawn`](#mvspawn)
-- [`/rtp`](#rtp)
-- [`/home set <番号>`](#home-set-番号)
-- [`/home warp <番号>`](#home-warp-番号)
-- [`/home name <番号>`](#home-name-番号)
-- [`/server <サーバー名>`](#server-サーバー名)
-
 ## `/hub`
 
 ロビーサーバーへ移動します。 ギガンティック☆整地鯖以外のサーバー (1day / 香川) でも実行できます。

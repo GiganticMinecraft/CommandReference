@@ -4,13 +4,6 @@
 
 サーバー間の移動については [こちら](./moving.md)。
 
-- [`/tpa <プレイヤー名>`](#tpa-プレイヤー名)
-- [`/tpahere <プレイヤー名>`](#tpahere-プレイヤー名)
-- [`/tpaccept`](#tpaccept)
-- [`/tpdeny`](#tpdeny)
-- [`/tpacancel`](#tpacancel)
-- [`/tptoggle`](#tptoggle)
-
 ## `/tpa <プレイヤー名>`
 
 指定したプレイヤーにテレポートリクエストを送信します。
