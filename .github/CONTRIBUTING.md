@@ -30,6 +30,19 @@ cargo install mdbook
 
 ただしリファレンスの実体は Markdown のため, 必ずしもブラウザのプレビューを確認する必要はありません. これは Optional です.
 
+#### プラグイン
+
+mdbook にはプラグイン機能があり, このリポジトリでは以下のプラグインを使用しています.
+
+- [`mdBook-pagetoc`](https://github.com/slowsage/mdbook-pagetoc)
+- [`mdbook-alerts`](https://github.com/lambdalisue/rs-mdbook-alerts)
+
+`mdbook-alerts` は `cargo` でインストールできます
+
+```sh
+cargo install mdbook-alerts mdbook-pagetoc
+```
+
 ### プレビュー表示する
 
 以下のコマンドでローカル上の CommandReference をプレビュー表示できます.

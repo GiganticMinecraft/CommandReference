@@ -1,30 +1,5 @@
 # Towny: 国コマンド
 
-- [`/nation`](#nation)
-- [`/nation ?`](#nation-)
-- [`/nation list`](#nation-list)
-- [`/nation online`](#nation-online)
-- [`/nation <国名>`](#nation-国名)
-- [`/nation leave`](#nation-leave)
-- [`/nation withdraw <値>`](#nation-withdraw-値)
-- [`/nation deposit <値>`](#nation-deposit-値)
-- [`/nation new <国名>`](#nation-new-国名)
-- [`/nation new <国名> <首都名>`](#nation-new-国名-首都名)
-- [`/nation add <町名>`](#nation-add-町名)
-- [`/nation kick <町名>`](#nation-kick-町名)
-- [`/nation delete <国名>`](#nation-delete-国名)
-- [`/nation ally [add|remove] <国名>`](#nation-ally-addremove-国名)
-- [`/nation enemy [add|remove] <国名>`](#nation-enemy-addremove-国名)
-- [`/nation rank [add|remove] <プレイヤー名> <ランク名>`](#nation-rank-addremove-プレイヤー名-ランク名)
-- [`/nation set king <プレイヤー名>`](#nation-set-king-プレイヤー名)
-- [`/nation set capital <町名>`](#nation-set-capital-町名)
-- [`/nation set taxes <値>`](#nation-set-taxes-値)
-- [`/nation set name <国名>`](#nation-set-name-国名)
-- [`/nation set surname <プレイヤー名> <称号>`](#nation-set-surname-プレイヤー名-称号)
-- [`/nation set tag <タグ>`](#nation-set-tag-タグ)
-- [`/nation set tag clear`](#nation-set-tag-clear)
-- [`/nation toggle neutral`](#nation-toggle-neutral)
-
 ## `/nation`
 
 加盟している国の情報を表示します。
@@ -105,7 +80,7 @@
 
 ## `/nation set taxes <値>`
 
-税金を設定します。[^1]
+税金を設定します。
 
 ## `/nation set name <国名>`
 
@@ -127,10 +102,6 @@
 
 国を中立国とします。
 
-----
-
-[^1]: 銀行に不具合があるため、設定するのはおすすめしません。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/nation.md)
+> [!CAUTION]
+>
+> 銀行操作系のコマンドは現在 Towny 側の不具合があるため、使用は推奨されません.

@@ -1,20 +1,4 @@
-# Towny: 小区画
-
-- [`/plot` / `/plot ?`](#plot--plot-)
-- [`/plot claim`](#plot-claim)
-- [`/plot claim auto`](#plot-claim-auto)
-- [`/plot fs <値> [circle|rect] [半径]`](#plot-fs-値-circlerect-半径)
-- [`/plot nfs [circle|rect] [半径]`](#plot-nfs-circlerect-半径)
-- [`/plot perm`](#plot-perm)
-- [`/plot set [reset|shop|embassy|arena|wilds]`](#plot-set-resetshopembassyarenawilds)
-- [`/plot set <名前>`](#plot-set-名前)
-- [`/plot set perm <on|off>`](#plot-set-perm-onoff)
-- [`/plot set perm <resident|ally|outsider> <on|off>`](#plot-set-perm-residentallyoutsider-onoff)
-- [`/plot set perm <build|destroy|switch|itemuse> <on|off>`](#plot-set-perm-builddestroyswitchitemuse-onoff)
-- [`/plot set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`](#plot-set-perm-residentallyoutsider-builddestroyswitchitemuse-onoff)
-- [`/plot set perm reset`](#plot-set-perm-reset)
-- [`/plot toggle <フラグ>`](#plot-toggle-フラグ)
-- [`/plot clear`](#plot-clear)
+# Towny: 小区画コマンド
 
 ## `/plot` / `/plot ?`
 
@@ -115,7 +99,3 @@
 ## `/plot clear`
 
 今いる小区画の看板を撤去します。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/plot.md)

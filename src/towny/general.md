@@ -1,13 +1,5 @@
 # Towny: 基本コマンド
 
-- [`/towny`](#towny)
-- [`/towny ?`](#towny-)
-- [`/towny map`](#towny-map)
-- [`/towny prices`](#towny-prices)
-- [`/towny time`](#towny-time)
-- [`/towny top residents [all|town|nation]`](#towny-top-residents-alltownnation)
-- [`/towny top land [all|town|resident]`](#towny-top-land-alltownresident)
-
 ## `/towny`
 
 各コマンドのヘルプ一覧を表示します。
@@ -51,7 +43,3 @@
 | `all` | 全ての町と国 |
 | `town` | 町ごと |
 | `resident` | 住民ごと |
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/general.md)

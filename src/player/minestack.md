@@ -1,4 +1,4 @@
-# MineStack関連
+# MineStack系
 
 MineStack の操作関連のコマンド群。棒メニューからでも操作可能です。
 
@@ -16,7 +16,7 @@ Minestack の自動収集機能をOFFにします。
 
 指定したカテゴリーの MineStack ページを開きます。
 
-> **例:**
+> [!TIP]
 >
 > - トップページを開く: `/minestack open 0 0`
 > - ガチャ品ページを開く: `/minestack open 7 1`
@@ -24,7 +24,3 @@ Minestack の自動収集機能をOFFにします。
 ## `/minestack store-all`
 
 インベントリに存在するアイテムをすべて MineStack に収納します。 (収納できないアイテムはそのままインベントリに残ります)
-
----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/minestack.md)

@@ -13,3 +13,13 @@ edition = "2021"
 build-dir = "build"
 create-missing = false
 use-default-preprocessors = true
+
+[output.html]
+git-repository-url = "https://github.com/GiganticMinecraft/CommandReference"
+edit-url-template = "https://github.com/GiganticMinecraft/CommandReference/edit/main/{path}"
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]
+
+[preprocessor.alerts]
+
+[preprocessor.pagetoc]

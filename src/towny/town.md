@@ -1,48 +1,5 @@
 # Towny: 町コマンド
 
-- [`/town`](#town)
-- [`/town ?`](#town-)
-- [`/town list`](#town-list)
-- [`/town <町名>`](#town-町名)
-- [`/town here`](#town-here)
-- [`/town new <町名> [プレイヤー名]`](#town-new-町名-プレイヤー名)
-- [`/town add <プレイヤー名>`](#town-add-プレイヤー名)
-- [`/town kick <プレイヤー名>`](#town-kick-プレイヤー名)
-- [`/town join <町名>`](#town-join-町名)
-- [`/town leave`](#town-leave)
-- [`/town spawn [町名]`](#town-spawn-町名)
-- [`/town claim [値]`](#town-claim-値)
-- [`/town claim outpost`](#town-claim-outpost)
-- [`/town claim auto`](#town-claim-auto)
-- [`/town unclaim [値]`](#town-unclaim-値)
-- [`/town unclaim all`](#town-unclaim-all)
-- [`/town withdraw <値>`](#town-withdraw-値)
-- [`/town deposit <値>`](#town-deposit-値)
-- [`/town delete <町名>`](#town-delete-町名)
-- [`/town outpost [値]`](#town-outpost-値)
-- [`/town ranklist`](#town-ranklist)
-- [`/town rank add <プレイヤー名> <ランク名>`](#town-rank-add-プレイヤー名-ランク名)
-- [`/town remove <プレイヤー名> <ランク名>`](#town-remove-プレイヤー名-ランク名)
-- [`/town reslist`](#town-reslist)
-- [`/town set board <メッセージ>`](#town-set-board-メッセージ)
-- [`/town set mayor <プレイヤー名>`](#town-set-mayor-プレイヤー名)
-- [`/town set homeblock`](#town-set-homeblock)
-- [`/town set spawn`](#town-set-spawn)
-- [`/town set name <新しい町名>`](#town-set-name-新しい町名)
-- [`/town set outpost`](#town-set-outpost)
-- [`/town set perm <on|off>`](#town-set-perm-onoff)
-- [`/town set perm <権限> <on|off>`](#town-set-perm-権限-onoff)
-- [`/town set tag <タグ>`](#town-set-tag-タグ)
-- [`/town set tag clear`](#town-set-tag-clear)
-- [`/town set texes <値>`](#town-set-texes-値)
-- [`/town set plottax <値>`](#town-set-plottax-値)
-- [`/town set plotprice <値>`](#town-set-plotprice-値)
-- [`/town set shoptax <値>`](#town-set-shoptax-値)
-- [`/town set shopprice <値>`](#town-set-shopprice-値)
-- [`/town set embassytax <値>`](#town-set-embassytax-値)
-- [`/town set embassyprice <値>`](#town-set-embassyprice-値)
-- [`/town toggle <フラグ>`](#town-toggle-フラグ)
-
 ## `/town`
 
 自分の町の情報を表示します。
@@ -135,9 +92,9 @@
 
 指定した分のお金を町の銀行に預けます。
 
-> **Warning**
+> [!WARNING]
 >
-> お金を入れたままにすると不具合でお金が消失することがあります。
+> Towny 側の不具合でお金を入れたままにすると不具合でお金が消失することがあります。
 
 ## `/town delete <町名>`
 
@@ -220,11 +177,11 @@
 
 ## `/town set texes <値>`
 
-税金を設定します。 [^1]
+税金を設定します。
 
 ## `/town set plottax <値>`
 
-プロットの税金を設定します。[^1]
+プロットの税金を設定します。
 
 ## `/town set plotprice <値>`
 
@@ -232,7 +189,7 @@
 
 ## `/town set shoptax <値>`
 
-商店区画の税金を設定します。[^1]
+商店区画の税金を設定します。
 
 ## `/town set shopprice <値>`
 
@@ -240,7 +197,7 @@
 
 ## `/town set embassytax <値>`
 
-大使館の税金を設定します。[^1]
+大使館の税金を設定します。
 
 ## `/town set embassyprice <値>`
 
@@ -262,10 +219,6 @@
 
 `*`: 設定関係なくサーバ内の設定により、強制的にOFFになります。
 
-----
-
-[^1]: 銀行に不具合があるため、設定するのはおすすめしません。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/town.md)
+> [!CAUTION]
+>
+> 銀行操作系のコマンドは現在 Towny 側の不具合があるため、使用は推奨されません.

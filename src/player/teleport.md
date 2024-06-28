@@ -1,15 +1,8 @@
-# プレイヤー間テレポート
+# テレポート系
 
 プレイヤー間のテレポートに関するコマンド群。
 
 サーバー間の移動については [こちら](./moving.md)。
-
-- [`/tpa <プレイヤー名>`](#tpa-プレイヤー名)
-- [`/tpahere <プレイヤー名>`](#tpahere-プレイヤー名)
-- [`/tpaccept`](#tpaccept)
-- [`/tpdeny`](#tpdeny)
-- [`/tpacancel`](#tpacancel)
-- [`/tptoggle`](#tptoggle)
 
 ## `/tpa <プレイヤー名>`
 
@@ -43,7 +36,3 @@
 - `OFF`: リクエストを自動的に拒否しません。
 
 > **注意:** テレポートリクエストの自動拒否を ON にした場合、申請を自分から送信することは出来なくなります。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/teleport.md)

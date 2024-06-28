@@ -3,22 +3,6 @@
 
 全てのコマンドは `/res` でも利用可能です。
 
-- [`/resident`](#resident)
-- [`/resident ?`](#resident-)
-- [`/resident <プレイヤー名>`](#resident-プレイヤー名)
-- [`/resident friend [add|remove] <プレイヤー名>`](#resident-friend-addremove-プレイヤー名)
-- [`/resident friend clearlist`](#resident-friend-clearlist)
-- [`/resident friend list`](#resident-friend-list)
-- [`/resident spawn`](#resident-spawn)
-- [`/resident toggle map`](#resident-toggle-map)
-- [`/resident toggle townclaim`](#resident-toggle-townclaim)
-- [`/resident toggle plotborder`](#resident-toggle-plotborder)
-- [`/resident set perm <on|off>`](#resident-set-perm-onoff)
-- [`/resident set perm <resident|ally|outsider> <on|off>`](#resident-set-perm-residentallyoutsider-onoff)
-- [`/resident set perm <build|destroy|switch|itemuse> <on|off>`](#resident-set-perm-builddestroyswitchitemuse-onoff)
-- [`/resident set perm <resident|ally|outsider> <build|destroy|switch|itemuse> <on|off>`](#resident-set-perm-residentallyoutsider-builddestroyswitchitemuse-onoff)
-- [`/resident set perm reset`](#resident-set-perm-reset)
-
 ## `/resident`
 
 自分の情報を表示します。
@@ -99,7 +83,3 @@
 ## `/resident set perm reset`
 
 小区画の権限の設定をリセットします。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/resident.md)

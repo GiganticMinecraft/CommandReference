@@ -2,22 +2,6 @@
 
 土地の保護やその管理に使用するコマンド群。
 
-- [`//wand`](#wand)
-- [`//sel`](#sel)
-- [`//pos1`](#pos1)
-- [`//pos2`](#pos2)
-- [`//expand <ブロック数> <方角>`](#expand-ブロック数-方角)
-- [`//contract <ブロック数> <方角>`](#contract-ブロック数-方角)
-- [`/rg claim <領域名>`](#rg-claim-領域名)
-- [`/rg info`](#rg-info)
-- [`/rg list -p <プレイヤー名>`](#rg-list--p-プレイヤー名)
-- [`/rg remove <領域名>`](#rg-remove-領域名)
-- [`/rg addmember <領域名> <プレイヤー名>`](#rg-addmember-領域名-プレイヤー名)
-- [`/rg removemember <領域名> <プレイヤー名>`](#rg-removemember-領域名-プレイヤー名)
-- [`/rg removeowner <領域名> <プレイヤー名>`](#rg-removeowner-領域名-プレイヤー名)
-- [`/rg flag <領域名> <対象フラグ> [-g グループ名] [allow|deny]`](#rg-flag-領域名-対象フラグ--g-グループ名-allowdeny)
-- [`/x-transfer <領域名> <プレイヤー名>`](#x-transfer-領域名-プレイヤー名)
-
 ## `//wand`
 
 保護の範囲設定に使用する木の斧をインベントリに追加します。
@@ -56,7 +40,7 @@
 
 指定したプレイヤーの保護を検索します。
 
-> **注意:**
+> [!IMPORTANT]
 >
 > WorldGuardがMCIDの検索に既に廃止されたMojangのAPIを使用しているため、現状自分のMCID以外は検索できません。
 >
@@ -64,8 +48,6 @@
 >
 > 参考: [プレイヤーの保護検索コマンドが自分自身のMCID以外機能しなくなっている - #不具合報告-ゲーム内](https://discord.com/channels/237758724121427969/1106084808897069117)
 > (整地鯖公式Discordに移動します)
-
-### 管理系
 
 ## `/rg remove <領域名>`
 
@@ -89,9 +71,10 @@
 
 指定した領域名の保護のオーナーから指定したプレイヤーを削除します。
 
-> **Warning**
+> [!CAUTION]
 >
-> 保護のオーナーだけを削除するため、メンバーは削除されません。
+> このコマンドは保護のオーナーだけを削除するため、メンバーは削除されません。
+>
 > 乗っ取り等を回避するために [**メンバーを最初に削除しましょう**](#rg-removemember-領域名-プレイヤー名)
 
 ## `/rg flag <領域名> <対象フラグ> [-g グループ名] [allow|deny]`
@@ -126,7 +109,3 @@
 ## `/x-transfer <領域名> <プレイヤー名>`
 
 指定した領域名の保護のオーナーを指定したプレイヤーに譲与します。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/protection.md)

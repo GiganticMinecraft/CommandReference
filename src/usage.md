@@ -2,10 +2,6 @@
 
 ![トップページ](./image/usage/toppage.png)
 
-- [サイドバー](#サイドバー)
-- [色を変更する](#色を変更する)
-- [検索する](#検索する)
-
 ## サイドバー
 
 画面左側に表示されているのはサイドバーです. そちらから閲覧したいリファレンスページを選びクリックすることでコマンド一覧が表示されます。
@@ -23,7 +19,3 @@
 ----
 
 [^1]: [ふざけているわけではないです. 本当にそう言います](https://ja.wikipedia.org/wiki/ハンバーガーボタン)
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/usage.md)
