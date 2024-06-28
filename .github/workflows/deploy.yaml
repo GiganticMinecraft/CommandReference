@@ -17,6 +17,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # https://github.com/rust-lang/mdBook/releases/tag/v0.4.40
+      MDBOOK_VERSION: 0.4.40
+
+      # https://github.com/slowsage/mdbook-pagetoc/releases/tag/v0.2.0
+      MDBOOK_PAGETOC_VERSION: 0.2.0
+
+      # https://github.com/badboy/mdbook-toc/releases/tag/0.14.2
+      MDBOOK_TOC_VERSION: 0.14.2
+
+      # https://github.com/lambdalisue/rs-mdbook-alerts/releases/tag/v0.5.2
+      MDBOOK_ALERTS_VERSION: 0.5.2
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,10 +36,24 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
       - name: Install mdbook
         uses: peaceiris/actions-mdbook@v2
         with:
-          mdbook-version: 'latest'
+          mdbook-version: ${{ env.MDBOOK_VERSION }}
+
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: "dev-guide/gh-actions-cache"
+
+      - name: Install mdbook plugins
+        run: |
+          cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
+          cargo install mdbook-pagetoc --version ${{ env.MDBOOK_PAGETOC_VERSION }}
+          cargo install mdbook-alerts --version ${{ env.MDBOOK_ALERTS_VERSION }}
 
       - name: Build with mdbook
         run: mdbook build
