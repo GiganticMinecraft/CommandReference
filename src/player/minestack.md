@@ -16,7 +16,7 @@ Minestack の自動収集機能をOFFにします。
 
 指定したカテゴリーの MineStack ページを開きます。
 
-> **例:**
+> [!TIP]
 >
 > - トップページを開く: `/minestack open 0 0`
 > - ガチャ品ページを開く: `/minestack open 7 1`
