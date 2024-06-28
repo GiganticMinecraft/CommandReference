@@ -109,7 +109,3 @@
 ## `/x-transfer <領域名> <プレイヤー名>`
 
 指定した領域名の保護のオーナーを指定したプレイヤーに譲与します。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/protection.md)

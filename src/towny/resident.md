@@ -83,7 +83,3 @@
 ## `/resident set perm reset`
 
 小区画の権限の設定をリセットします。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/resident.md)

@@ -91,7 +91,3 @@
 ## `/ch log ! p=<プレイヤー名>`
 
 指定したプレイヤー名のチャットログを表示します。
-
----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/chat.md)

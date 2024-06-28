@@ -27,8 +27,4 @@ CommandReference は [GitHub で公開されている][Repository]ため、誰�
 
 詳しい参加方法については [CONTRIBUTING.md](https://github.com/GiganticMinecraft/CommandReference/blob/main/.github/CONTRIBUTING.md) をご覧ください.
 
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/introduction.md)
-
 [Repository]: https://github.com/GiganticMinecraft/CommandReference

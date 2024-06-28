@@ -64,7 +64,3 @@
 
 [^1]: デバッグサーバーへ所有アイテムは移動できません。
 [^2]: 詳細については、公式Discordグループ内のチャンネルをご覧ください。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/moving.md)

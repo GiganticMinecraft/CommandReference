@@ -36,7 +36,3 @@
 - `OFF`: リクエストを自動的に拒否しません。
 
 > **注意:** テレポートリクエストの自動拒否を ON にした場合、申請を自分から送信することは出来なくなります。
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/teleport.md)

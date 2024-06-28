@@ -24,7 +24,3 @@ Minestack の自動収集機能をOFFにします。
 ## `/minestack store-all`
 
 インベントリに存在するアイテムをすべて MineStack に収納します。 (収納できないアイテムはそのままインベントリに残ります)
-
----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/player/minestack.md)

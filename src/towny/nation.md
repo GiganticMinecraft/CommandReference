@@ -105,7 +105,3 @@
 > [!CAUTION]
 >
 > 銀行操作系のコマンドは現在 Towny 側の不具合があるため、使用は推奨されません.
-
-----
-
-[このページを GitHub で編集する](https://github.com/GiganticMinecraft/CommandReference/edit/main/src/towny/nation.md)
