@@ -1,0 +1,32 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
+      "matchStrings": ["#\\s?renovate: rust-lang/mdBook\\s*MDBOOK_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
+      "depNameTemplate": "mdbook",
+      "packageNameTemplate": "rust-lang/mdBook",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
+      "matchStrings": ["#\\s?renovate: slowsage/mdbook-pagetoc\\s*MDBOOK_PAGETOC_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
+      "depNameTemplate": "mdbook-pagetoc",
+      "packageNameTemplate": "slowsage/mdbook-pagetoc",
+      "datasourceTemplate": "github-releases"      
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)\\.github/workflows/deploy\\.yaml$"],
+      "matchStrings": ["#\\s?renovate: lambdalisue/rs-mdbook-alerts\\s*MDBOOK_ALERTS_VERSION:\\s*'(?<currentValue>\\d\\.\\d+\\.\\d+)'"],
+      "depNameTemplate": "mdbook-alerts",
+      "packageNameTemplate": "lambdalisue/rs-mdbook-alerts",
+      "datasourceTemplate": "github-releases"      
+    }
+  ]
+}
