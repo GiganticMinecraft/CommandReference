@@ -24,6 +24,10 @@
 * [小区画コマンド](./towny/plot.md)
 * [住民コマンド](./towny/resident.md)
 
+# サポーター
+
+* [Observerコマンド](./other/observer.md)
+
 ----
 
 [貢献してくれたプレイヤー](./contributors.md)
