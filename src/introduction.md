@@ -16,6 +16,11 @@
 | ---- | ---- | ---- |
 | SeichiAssist | [v88](https://github.com/GiganticMinecraft/SeichiAssist/pull/2216) | 2023/09/11 |
 | Towny | 0.96.2.0 | ---- |
+| SpectatorTheater | 1.0.1 | ---- |
+| ObserverUtils | 0.6.0 | ---- |
+| WorldGuard | 6.2.2-SNAPSHOT (8eeab68) | ---- |
+| LunaChat | 2.8.12 | ---- |
+| MyHat | 1.0 | ---- |
 
 ギガンティック☆整地鯖の Minecraft サーバー本体のバージョンは **1.12.2** (2024/06/21現在) 時点を扱っています。
 
