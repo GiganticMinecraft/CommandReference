@@ -23,6 +23,7 @@
 * [国コマンド](./towny/nation.md)
 * [小区画コマンド](./towny/plot.md)
 * [住民コマンド](./towny/resident.md)
+* [ショップコマンド](./towny/shop.md)
 
 # サポーター
 
