@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # renovate: rust-lang/mdBook
-      MDBOOK_VERSION: '0.4.40'
+      MDBOOK_VERSION: '0.4.42'
 
       # renovate: slowsage/mdbook-pagetoc
       MDBOOK_PAGETOC_VERSION: '0.2.0'
